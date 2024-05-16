@@ -27,16 +27,16 @@ for listing in property_listings:
         property_price = price_element.text.strip()
     else:
         property_price = "N/A"
-
+    
     # Extract floor space
     floor_space_element = listing.find("span", class_="floor-area")
     if floor_space_element:
         floor_space = floor_space_element.text.strip()
     else:
         floor_space = "N/A"
-
+    
     # Print the extracted data
     print(f"Price: {property_price}, Floor Space: {floor_space}")
-
+    
     # Wait for the specified time before making the next request
     time.sleep(wait_time)
