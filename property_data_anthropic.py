@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 
 # URL of the webpage you want to scrape
-url = "https://www.propertyguru.com.sg/listings"
+url = "https://www.propertyguru.com.sg/property-for-sale?market=residential&listing_type=sale&search=true"
 
 # Rate limiting parameters
 requests_per_minute = 30  # Maximum number of requests per minute
