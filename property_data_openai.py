@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 
 # URL of the PropertyGuru page you want to scrape
-url = 'https://www.propertyguru.com.sg/property-for-sale'
+url = 'https://www.propertyguru.com.sg/property-for-sale?market=residential&listing_type=sale&search=true'
 
 # Function to get the HTML content of a page
 def fetch_page(url):
