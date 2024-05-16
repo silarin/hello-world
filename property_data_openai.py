@@ -32,10 +32,10 @@ def scrape_properties(page_content):
 page_content = fetch_page(url)
 if page_content:
     scrape_properties(page_content)
-
+    
     # Introduce a delay between requests
     time.sleep(5)  # 5 seconds delay
-
+    
     # Fetch additional pages if needed
     # Example: if the website has pagination
     next_page_url = 'https://www.propertyguru.com.sg/property-for-sale?page=2'
