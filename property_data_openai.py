@@ -18,14 +18,14 @@ def fetch_page(url):
 def scrape_properties(page_content):
     soup = BeautifulSoup(page_content, 'html.parser')
     listings = soup.find_all('div', class_='listing-card')
-
+    
     for listing in listings:
         price_tag = listing.find('span', class_='price')
         price = price_tag.get_text(strip=True) if price_tag else 'N/A'
-
+        
         floor_space_tag = listing.find('span', class_='floor-area')
         floor_space = floor_space_tag.get_text(strip=True) if floor_space_tag else 'N/A'
-
+        
         print(f'Price: {price}, Floor Space: {floor_space}')
 
 # Fetch the initial page
