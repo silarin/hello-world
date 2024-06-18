@@ -45,7 +45,7 @@ try:
             # Change the datetime dtype into date dtype.
             df2data['Date']       = df2data['Date'].dt.date
             
-            # Using contract no as key, filter out duplicated rows.
+            # Using Key1, filter out duplicated rows.
             df1uniq = df1data[~df1data['Key1'].isin(df2data['Key1'])]
             df2uniq = df2data[~df2data['Key1'].isin(df1data['Key1'])]
             
@@ -108,7 +108,7 @@ try:
                     # Merge the new change into the list
                     df = df.merge(new_row, how='outer')
                     
-            # Combine the rows with same contract no into a single row.
+            # Combine the rows with same Key1 into a single row.
             df = df.groupby(by='Key1').first().sort_values(by=['Key1'], key=lambda col: col.str.lower().astype(int)).reset_index().fillna('')
             
             # Get the dimensions of the dataframe. If empty, skip worksheet creation.
