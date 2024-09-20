@@ -1,4 +1,2 @@
 # hello-world
-hello-world
-this is my first repo
-I am editing the README file. Adding some more details about the project description.
+Repository for Python scripts and SQL which I created in my course of work.
