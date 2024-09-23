@@ -19,3 +19,13 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+  # python
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: daily
+    groups:
+      python-packages:
+        patterns:
+          - "*"
