@@ -3,9 +3,7 @@
 ## Getting started <!-- omit in toc -->
 
 Before you begin:
-- This site is powered by Node.js. Check to see if you're on the [version of node we support](contributing/development.md).
 - Have you read the [code of conduct](CODE_OF_CONDUCT.md)?
-- Check out the [existing issues](https://github.com/github/docs/issues) & see if we [accept contributions](#types-of-contributions-memo) for your type of issue.
 
 ### Use the 'make a contribution' button
 
@@ -13,11 +11,11 @@ Before you begin:
 
 Navigating a new codebase can be challenging, so we're making that a little easier. As you're using docs.github.com, you may come across an article that you want to make an update to. You can click on the **make a contribution** button right on that article, which will take you to the file in this repo where you'll make your changes.
 
-Before you make your changes, check to see if an [issue exists](https://github.com/github/docs/issues/) already for the change you want to make.
+Before you make your changes, check to see if an [issue exists](https://github.com/silarin/hello-world/issues) already for the change you want to make.
 
 ### Don't see your issue? Open one
 
-If you spot something new, open an issue using a [template](https://github.com/github/docs/issues/new/choose). We'll use the issue to have a conversation about the problem you want to fix.
+If you spot something new, open an issue using a [template](https://github.com/silarin/hello-world/issues/new/choose). We'll use the issue to have a conversation about the problem you want to fix.
 
 **Note:** We cannot accept contributions to the [REST API reference documentation](https://docs.github.com/en/rest/reference). If you spot an inaccuracy in the REST API reference documentation, open an issue in the [github/rest-api-description](https://github.com/github/rest-api-description/issues/new?template=schema-inaccuracy.md) repository.
 
@@ -40,8 +38,6 @@ Fork with [GitHub Codespaces](https://github.com/features/codespaces):
 
 ### Make your update:
 Make your changes to the file(s) you'd like to update. Here are some tips and tricks for [using the docs codebase](#working-in-the-githubdocs-repository).
-  - Are you making changes to the application code? You'll need **Node.js v16** to run the site locally. See [contributing/development.md](contributing/development.md).
-  - Are you contributing to markdown? We use [GitHub Markdown](contributing/content-markup-reference.md).
 
 ### Open a pull request
 When you're done making changes and you'd like to propose them for review, use the [pull request template](#pull-request-template) to open your PR (pull request).
@@ -54,7 +50,7 @@ When you're done making changes and you'd like to propose them for review, use t
 ### Your PR is merged!
 Congratulations! The whole GitHub community thanks you. :sparkles:
 
-Once your PR is merged, you will be proudly listed as a contributor in the [contributor chart](https://github.com/github/docs/graphs/contributors).
+Once your PR is merged, you will be proudly listed as a contributor in the [contributor chart](https://github.com/silarin/hello-world/graphs/contributors).
 
 ### Keep contributing as you use GitHub Docs
 
@@ -85,19 +81,19 @@ You can contribute to the GitHub Docs content and site in several ways. This rep
 ### :mega: Discussions
 Discussions are where we have conversations.
 
-If you'd like help troubleshooting a docs PR you're working on, have a great new idea, or want to share something amazing you've learned in our docs, join us in [discussions](https://github.com/github/docs/discussions).
+If you'd like help troubleshooting a docs PR you're working on, have a great new idea, or want to share something amazing you've learned in our docs, join us in [discussions](https://github.com/silarin/hello-world/discussions).
 
 ### :beetle: Issues
 [Issues](https://docs.github.com/en/github/managing-your-work-on-github/about-issues) are used to track tasks that contributors can help with. If an issue has a triage label, we haven't reviewed it yet and you shouldn't begin work on it.
 
-If you've found something in the content or the website that should be updated, search open issues to see if someone else has reported the same thing. If it's something new, open an issue using a [template](https://github.com/github/docs/issues/new/choose). We'll use the issue to have a conversation about the problem you want to fix.
+If you've found something in the content or the website that should be updated, search open issues to see if someone else has reported the same thing. If it's something new, open an issue using a [template](https://github.com/silarin/hello-world/issues/new/choose). We'll use the issue to have a conversation about the problem you want to fix.
 
 ### :hammer_and_wrench: Pull requests
 A [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) is a way to suggest changes in our repository.
 
 When we merge those changes, they should be deployed to the live site within 24 hours. :earth_africa: To learn more about opening a pull request in this repo, see [Opening a pull request](#opening-a-pull-request) below.
 
-We cannot accept contributions to the [REST API reference documentation](https://docs.github.com/en/rest/reference). If you spot an inaccuracy in the REST API reference documentation, open an issue in the [github/rest-api-description](https://github.com/github/rest-api-description/issues/new?template=schema-inaccuracy.md) repository.
+We cannot accept contributions to the [REST API reference documentation](https://docs.github.com/en/rest/reference). If you spot an inaccuracy in the REST API reference documentation, open an issue in the [github/rest-api-description](https://github.com/silarin/hello-world/issues/new/choose?template=schema-inaccuracy.md) repository.
 
 ### :question: Support
 We are a small team working hard to keep up with the documentation demands of a continuously changing product. Unfortunately, we just can't help with support questions in this repository. If you are experiencing a problem with GitHub, unrelated to our documentation, please [contact GitHub Support directly](https://support.github.com/contact). Any issues, discussions, or pull requests opened here requesting support will be given information about how to contact GitHub Support, then closed and locked.
@@ -131,24 +127,6 @@ You can use the GitHub user interface :pencil2: for some small changes, like fix
 ## Working in the github/docs repository
 Here's some information that might be helpful while working on a Docs PR:
 
-- [Development](/contributing/development.md) - This short guide describes how to get this app running on your local machine.
-
-- [Content markup reference](/contributing/content-markup-reference.md) - All of our content is written in GitHub-flavored Markdown, with some additional enhancements.
-
-- [Content style guide for GitHub Docs](/contributing/content-style-guide.md) - This guide covers GitHub-specific information about how we style our content and images. It also links to the resources we use for general style guidelines.
-
-- [Content model](/contributing/content-model.md) and [content templates](/contributing/content-templates.md) - The content model describes the purpose of each type of content we use in GitHub Docs and how to write for each type. The templates allow you to quickly get started with new articles.
-
-- [Reusables](/data/reusables/README.md) - We use reusables to help us keep content up to date. Instead of writing the same long string of information in several articles, we create a reusable, then call it from the individual articles.
-
-- [Variables](/data/variables/README.md) - We use variables the same way we use reusables. Variables are for short strings of reusable text.
-
-- [Liquid](/contributing/liquid-helpers.md) - We use liquid helpers to create different versions of our content.
-
-- [Scripts](/script/README.md) - The scripts directory is the home for all of the scripts you can run locally.
-
-- [Tests](/tests/README.md) - We use tests to ensure content will render correctly on the site. Tests run automatically in your PR, and sometimes it's also helpful to run them locally.
-
 ## Reviewing
 We (usually the docs team, but sometimes GitHub product managers, engineers, or supportocats too!) review every single PR. The purpose of reviews is to create the best content we can for people who use GitHub.
 
@@ -163,7 +141,7 @@ For content changes, make sure that you:
 - [ ] Confirm that the changes meet the user experience and goals outlined in the content design plan (if there is one).
 - [ ] Compare your pull request's source changes to staging to confirm that the output matches the source and that everything is rendering as expected. This helps spot issues like typos, content that doesn't follow the style guide, or content that isn't rendering due to versioning problems. Remember that lists and tables can be tricky.
 - [ ] Review the content for technical accuracy.
-- [ ] Review the entire pull request using the [localization checklist](contributing/localization-checklist.md).
+- [ ] Review the entire pull request using the localization checklist.
 - [ ] Copy-edit the changes for grammar, spelling, and adherence to the [style guide](https://github.com/github/docs/blob/main/contributing/content-style-guide.md).
 - [ ] Check new or updated Liquid statements to confirm that versioning is correct.
 - [ ] If there are any failing checks in your PR, troubleshoot them until they're all passing.
