@@ -9,7 +9,7 @@
    Using SQL to simulate the conDel() X++ container function. This builds on the CONPEEK() and CONSIZE() SQL functions created by Cody Thimm.
    I found a need to extract data from very large containers in Dynamics AX. However the CONPEEK function has a limitation with its VARBINARY(8000) parameter.
    The workaround is to delete a container from the main container, and then use CONPEEK to extract the data.
-   Looping within the 8k limit allows CONPEEK to extract any container data without hanging up.
+   By deleting from and looping within the 8k limits of the data container, this allows CONPEEK to extract any container data without causing the query to freeze up.
  PARAMETERS:
    varbinary(max), -- the container to delete from
    int -- which container to delete
